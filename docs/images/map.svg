@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 400" width="560" height="400" font-family="sans-serif">
+  <!-- ひだまり舎デモ用オリジナルイラスト：簡易地図（実在の地図ではありません） -->
+  <rect width="560" height="400" fill="#fffdf9"/>
+  <!-- 線路 -->
+  <rect x="0" y="70" width="560" height="14" fill="#d9cfc0"/>
+  <g stroke="#fffdf9" stroke-width="3">
+    <line x1="20" y1="77" x2="540" y2="77" stroke-dasharray="16 12"/>
+  </g>
+  <!-- 道路 -->
+  <g fill="#efe8dc">
+    <rect x="0" y="180" width="560" height="26"/>
+    <rect x="0" y="300" width="560" height="26"/>
+    <rect x="120" y="84" width="26" height="316"/>
+    <rect x="360" y="84" width="26" height="316"/>
+  </g>
+  <!-- ブロック -->
+  <g fill="#f4ede2">
+    <rect x="160" y="100" width="185" height="66" rx="4"/>
+    <rect x="160" y="220" width="185" height="66" rx="4"/>
+    <rect x="400" y="220" width="140" height="66" rx="4"/>
+    <rect x="20" y="220" width="86" height="66" rx="4"/>
+  </g>
+  <!-- 駅 -->
+  <rect x="96" y="40" width="74" height="34" rx="4" fill="#2b2622"/>
+  <text x="133" y="63" font-size="14" fill="#fffdf9" text-anchor="middle">駅</text>
+  <!-- 道順 -->
+  <path d="M133 84 V193 H373 V270" fill="none" stroke="#8a5a3c" stroke-width="4" stroke-dasharray="2 10" stroke-linecap="round"/>
+  <!-- 店舗ピン -->
+  <g transform="translate(373 270)">
+    <path d="M0 0 c-18 -22 -22 -32 -22 -42 a22 22 0 0 1 44 0 c0 10 -4 20 -22 42 z" fill="#8a5a3c"/>
+    <circle cx="0" cy="-42" r="8" fill="#fffdf9"/>
+  </g>
+  <rect x="404" y="232" width="124" height="40" rx="4" fill="#2b2622"/>
+  <text x="466" y="257" font-size="14" fill="#fffdf9" text-anchor="middle">ひだまり舎</text>
+  <text x="270" y="360" font-size="14" fill="#6b6158" text-anchor="middle">徒歩約5分（イメージ図）</text>
+</svg>

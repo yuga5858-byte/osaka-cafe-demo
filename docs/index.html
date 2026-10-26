@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ===== 基本SEO ===== -->
+  <title>珈琲と焼菓子 ひだまり舎｜大阪・中崎町の小さなカフェ（デモサイト）</title>
+  <meta name="description" content="大阪・中崎町の路地裏にある、自家焙煎珈琲と焼菓子の小さなカフェ「ひだまり舎」。※ホームページ制作の営業用デモサイトです。店名・価格・住所はすべて架空です。">
+  <!-- デモ（架空の店舗情報）なので検索エンジンに載せない。本番公開時はこの1行を削除する -->
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#f7f3ec">
+
+  <!-- SNSでシェアされたときの表示（OGP）。本番では og:url と og:image を実際のURLにする -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="珈琲と焼菓子 ひだまり舎（デモサイト）">
+  <meta property="og:description" content="大阪・中崎町の小さなカフェ。※営業用デモサイトです。店舗情報はすべて架空です。">
+  <meta property="og:locale" content="ja_JP">
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- 構造化データ（Googleに店舗情報を伝える）。値はすべて架空 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "name": "珈琲と焼菓子 ひだまり舎（デモ・架空店舗）",
+    "description": "営業用デモサイトの架空店舗です。",
+    "servesCuisine": "コーヒー、焼菓子",
+    "priceRange": "¥500〜¥1,500",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "大阪府",
+      "addressLocality": "大阪市北区",
+      "streetAddress": "中崎西0丁目0-0（架空）"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday", "Sunday"],
+        "opens": "09:00",
+        "closes": "19:00"
+      }
+    ]
+  }
+  </script>
+
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へスキップ</a>
+
+  <!-- デモであることを常に表示するお知らせ帯 -->
+  <div class="demo-banner" role="note">
+    これは<strong>ホームページ制作の営業用デモサイト</strong>です。店名・価格・住所などはすべて架空です。
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#top" aria-label="ひだまり舎 トップへ">
+        <img class="logo-mark" src="images/favicon.svg" width="26" height="26" alt="">
+        <span class="logo-text">ひだまり舎</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="global-nav">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="visually-hidden">メニューを開く</span>
+      </button>
+
+      <nav id="global-nav" class="global-nav" aria-label="ページ内メニュー">
+        <ul>
+          <li><a href="#about">お店について</a></li>
+          <li><a href="#menu">メニュー</a></li>
+          <li><a href="#hours">営業時間</a></li>
+          <li><a href="#access">アクセス</a></li>
+          <li><button class="btn btn-small js-unavailable" type="button" data-feature="reserve">ご予約</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== ファーストビュー ===== -->
+    <section id="top" class="hero" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Coffee &amp; Baked Goods ／ Nakazakicho, Osaka</p>
+          <h1 id="hero-title" class="hero-title">
+            路地裏の、<br>ひだまりで<br>ひと休み。
+          </h1>
+          <p class="hero-lead">
+            自家焙煎の珈琲と、毎朝焼き上げる焼菓子。<br class="pc-only">
+            古い長屋を改装した、十二席だけの小さなカフェです。
+          </p>
+          <div class="hero-actions">
+            <button class="btn js-unavailable" type="button" data-feature="reserve">席を予約する</button>
+            <a class="btn btn-ghost" href="#menu">メニューを見る</a>
+          </div>
+          <p class="open-status" id="open-status" aria-live="polite"></p>
+        </div>
+        <figure class="hero-visual">
+          <img src="images/hero.svg" width="560" height="640"
+               alt="窓から差し込む光の中、湯気の立つ珈琲カップと焼菓子が置かれたテーブルのイラスト">
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===== 店舗紹介 ===== -->
+    <section id="about" class="section about" aria-labelledby="about-title">
+      <div class="container about-inner">
+        <figure class="about-visual">
+          <img src="images/about.svg" width="520" height="420" loading="lazy" decoding="async"
+               alt="木のカウンターと焙煎機がある、長屋を改装した店内のイラスト">
+        </figure>
+        <div class="about-text">
+          <p class="section-label">About</p>
+          <h2 id="about-title" class="section-title">ゆっくり過ごせる、<br>街の縁側のような場所</h2>
+          <p>
+            築八十年の長屋を、できるだけ元の梁や建具を残して改装しました。
+            店主がひとりで焙煎から焼菓子づくりまで担う、小さなお店です。
+          </p>
+          <p>
+            珈琲豆は、産地ごとの個性が出るよう少量ずつ店内で焙煎しています。
+            お好みの味わいを伺いながら、一杯ずつハンドドリップでお淹れします。
+          </p>
+          <ul class="feature-list">
+            <li><span class="feature-num" aria-hidden="true">01</span>店内焙煎のスペシャルティ珈琲</li>
+            <li><span class="feature-num" aria-hidden="true">02</span>国産小麦・発酵バターの焼菓子</li>
+            <li><span class="feature-num" aria-hidden="true">03</span>全12席・Wi-Fi／電源あり</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== メニュー ===== -->
+    <section id="menu" class="section menu" aria-labelledby="menu-title">
+      <div class="container">
+        <p class="section-label">Menu</p>
+        <h2 id="menu-title" class="section-title">メニュー</h2>
+        <p class="section-note">価格はすべて税込・架空のデモ価格です。</p>
+
+        <div class="menu-grid">
+          <div class="menu-group">
+            <h3 class="menu-group-title">珈琲</h3>
+            <dl class="menu-list">
+              <div class="menu-item">
+                <dt>ひだまりブレンド<span class="menu-desc">深煎り・ビターチョコのような余韻</span></dt>
+                <dd>¥550</dd>
+              </div>
+              <div class="menu-item">
+                <dt>本日のシングルオリジン<span class="menu-desc">浅煎り〜中煎り・産地は店頭で</span></dt>
+                <dd>¥650</dd>
+              </div>
+              <div class="menu-item">
+                <dt>カフェオレ<span class="menu-desc">ホット／アイス</span></dt>
+                <dd>¥600</dd>
+              </div>
+              <div class="menu-item">
+                <dt>水出し珈琲<span class="menu-desc">夏季限定・12時間抽出</span></dt>
+                <dd>¥620</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="menu-group">
+            <h3 class="menu-group-title">焼菓子・軽食</h3>
+            <dl class="menu-list">
+              <div class="menu-item">
+                <dt>焦がしバターのフィナンシェ</dt>
+                <dd>¥320</dd>
+              </div>
+              <div class="menu-item">
+                <dt>季節のタルト<span class="menu-desc">内容は日替わり</span></dt>
+                <dd>¥580</dd>
+              </div>
+              <div class="menu-item">
+                <dt>厚切りバタートースト</dt>
+                <dd>¥450</dd>
+              </div>
+              <div class="menu-item">
+                <dt>モーニングセット<span class="menu-desc">11時まで・トースト＋ゆで卵＋ブレンド</span></dt>
+                <dd>¥780</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 営業時間 ===== -->
+    <section id="hours" class="section hours" aria-labelledby="hours-title">
+      <div class="container hours-inner">
+        <div>
+          <p class="section-label">Hours</p>
+          <h2 id="hours-title" class="section-title">営業時間</h2>
+          <p class="section-note">デモ用の架空の営業時間です。</p>
+        </div>
+        <table class="hours-table">
+          <caption class="visually-hidden">曜日ごとの営業時間</caption>
+          <tbody>
+            <tr><th scope="row">火〜金</th><td>8:00 – 18:00 <span class="lo">（L.O. 17:30）</span></td></tr>
+            <tr><th scope="row">土・日・祝</th><td>9:00 – 19:00 <span class="lo">（L.O. 18:30）</span></td></tr>
+            <tr><th scope="row">定休日</th><td>月曜日（祝日の場合は翌日）</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ===== アクセス ===== -->
+    <section id="access" class="section access" aria-labelledby="access-title">
+      <div class="container access-inner">
+        <div class="access-text">
+          <p class="section-label">Access</p>
+          <h2 id="access-title" class="section-title">アクセス</h2>
+          <dl class="info-list">
+            <div><dt>住所</dt><dd>〒530-0000 大阪府大阪市北区<span class="nowrap">中崎西0丁目0-0</span><br><span class="muted">（架空の住所です）</span></dd></div>
+            <div><dt>最寄駅</dt><dd>大阪メトロ谷町線「中崎町駅」より徒歩約5分（想定）</dd></div>
+            <div><dt>電話</dt><dd>06-0000-0000 <span class="muted">（架空の番号です）</span></dd></div>
+            <div><dt>席数</dt><dd>12席（カウンター6席・テーブル6席）</dd></div>
+          </dl>
+        </div>
+        <figure class="access-map">
+          <img src="images/map.svg" width="560" height="400" loading="lazy" decoding="async"
+               alt="駅から店舗までの道順を示した簡易地図のイラスト（デモ用・実在の地図ではありません）">
+          <figcaption>※イメージ図です。本番ではGoogleマップ等を設置できます。</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===== Instagram・予約 ===== -->
+    <section id="contact" class="section contact" aria-labelledby="contact-title">
+      <div class="container contact-inner">
+        <p class="section-label">Reservation &amp; SNS</p>
+        <h2 id="contact-title" class="section-title">ご予約・最新情報</h2>
+        <p>
+          季節のタルトや焙煎したての豆の情報は Instagram でお知らせしています。<br class="pc-only">
+          お席のご予約はオンラインで承ります。
+        </p>
+        <div class="contact-actions">
+          <button class="btn js-unavailable" type="button" data-feature="reserve">オンラインで予約する</button>
+          <button class="btn btn-ghost js-unavailable" type="button" data-feature="instagram">
+            <svg class="icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+              <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/>
+              <circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/>
+              <circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/>
+            </svg>
+            Instagram を見る
+          </button>
+        </div>
+        <p class="muted small">※デモサイトのため、予約・Instagramはまだ接続していません。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-logo">珈琲と焼菓子 ひだまり舎</p>
+      <p class="small">本サイトはホームページ制作サービスの営業用デモです。掲載されている店名・価格・住所・電話番号・営業時間はすべて架空のものです。</p>
+      <p class="small">イラストはすべて本デモ用に作成したオリジナルです。</p>
+      <p class="small">&copy; <span id="year">2026</span> Demo Site</p>
+    </div>
+  </footer>
+
+  <!-- 未接続の機能を押したときに表示する案内 -->
+  <dialog id="unavailable-dialog" class="dialog" aria-labelledby="dialog-title">
+    <h2 id="dialog-title" class="dialog-title">デモのため未接続です</h2>
+    <p id="dialog-message">実際の導入時に設定します。</p>
+    <form method="dialog">
+      <button class="btn" type="submit">閉じる</button>
+    </form>
+  </dialog>
+</body>
+</html>

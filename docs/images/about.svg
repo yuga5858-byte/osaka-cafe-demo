@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 420" width="520" height="420">
+  <!-- ひだまり舎デモ用オリジナルイラスト：長屋を改装した店内 -->
+  <rect width="520" height="420" fill="#f4ede2"/>
+  <!-- 梁 -->
+  <rect x="0" y="40" width="520" height="22" fill="#8a5a3c"/>
+  <rect x="80" y="62" width="14" height="230" fill="#a47657"/>
+  <rect x="420" y="62" width="14" height="230" fill="#a47657"/>
+  <!-- ペンダントライト -->
+  <g>
+    <line x1="200" y1="62" x2="200" y2="120" stroke="#2b2622" stroke-width="2"/>
+    <path d="M178 120 h44 l10 26 h-64 z" fill="#2b2622"/>
+    <ellipse cx="200" cy="148" rx="30" ry="6" fill="#f3d9a4" opacity="0.8"/>
+    <line x1="320" y1="62" x2="320" y2="120" stroke="#2b2622" stroke-width="2"/>
+    <path d="M298 120 h44 l10 26 h-64 z" fill="#2b2622"/>
+    <ellipse cx="320" cy="148" rx="30" ry="6" fill="#f3d9a4" opacity="0.8"/>
+  </g>
+  <!-- 棚 -->
+  <rect x="120" y="170" width="140" height="8" fill="#a47657"/>
+  <g fill="#c9b79f">
+    <rect x="130" y="140" width="22" height="30" rx="3"/>
+    <rect x="158" y="146" width="22" height="24" rx="3"/>
+    <rect x="186" y="136" width="22" height="34" rx="3"/>
+  </g>
+  <!-- 焙煎機 -->
+  <rect x="320" y="200" width="80" height="92" rx="6" fill="#4a3b31"/>
+  <circle cx="360" cy="236" r="24" fill="#6b5546"/>
+  <circle cx="360" cy="236" r="12" fill="#2b2622"/>
+  <rect x="352" y="160" width="16" height="40" fill="#4a3b31"/>
+  <path d="M340 160 h40 l-8 -22 h-24 z" fill="#6b5546"/>
+  <!-- カウンター -->
+  <rect x="0" y="292" width="520" height="28" fill="#b98a68"/>
+  <rect x="20" y="320" width="480" height="100" fill="#a47657"/>
+  <g stroke="#8a5a3c" stroke-width="2" opacity="0.6">
+    <line x1="140" y1="320" x2="140" y2="420"/>
+    <line x1="260" y1="320" x2="260" y2="420"/>
+    <line x1="380" y1="320" x2="380" y2="420"/>
+  </g>
+  <!-- カップ -->
+  <path d="M150 268 h40 v14 a20 14 0 0 1 -40 0 z" fill="#fffaf2"/>
+  <path d="M230 262 h28 l-4 30 h-20 z" fill="#fffaf2"/>
+  <path d="M222 254 h44 v8 h-44 z" fill="#6b5546"/>
+</svg>

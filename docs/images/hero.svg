@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 640" width="560" height="640">
+  <!-- ひだまり舎デモ用オリジナルイラスト：窓辺の珈琲 -->
+  <rect width="560" height="640" fill="#e9dfd1"/>
+  <!-- 窓 -->
+  <rect x="70" y="60" width="420" height="330" fill="#f6efe3"/>
+  <g stroke="#cdbda8" stroke-width="6" fill="none">
+    <rect x="70" y="60" width="420" height="330"/>
+    <line x1="280" y1="60" x2="280" y2="390"/>
+    <line x1="70" y1="225" x2="490" y2="225"/>
+  </g>
+  <!-- 光 -->
+  <polygon points="120,390 300,390 420,640 160,640" fill="#fbf6ec" opacity="0.7"/>
+  <polygon points="320,390 470,390 560,600 560,640 470,640" fill="#fbf6ec" opacity="0.45"/>
+  <!-- 植物 -->
+  <g fill="#9aa88a">
+    <ellipse cx="430" cy="300" rx="16" ry="38" transform="rotate(-25 430 300)"/>
+    <ellipse cx="455" cy="295" rx="14" ry="34" transform="rotate(20 455 295)"/>
+    <ellipse cx="442" cy="270" rx="12" ry="30"/>
+  </g>
+  <rect x="420" y="330" width="44" height="60" rx="4" fill="#b98a68"/>
+  <!-- テーブル -->
+  <rect x="0" y="470" width="560" height="170" fill="#b98a68"/>
+  <rect x="0" y="470" width="560" height="10" fill="#a47657"/>
+  <!-- ソーサーとカップ -->
+  <ellipse cx="240" cy="520" rx="110" ry="22" fill="#f4ede2"/>
+  <ellipse cx="240" cy="516" rx="80" ry="14" fill="#e6dccd"/>
+  <path d="M170 420 h140 v50 a70 50 0 0 1 -140 0 z" fill="#fffaf2"/>
+  <ellipse cx="240" cy="420" rx="70" ry="12" fill="#6e4529"/>
+  <path d="M310 432 a26 26 0 0 1 0 48" fill="none" stroke="#fffaf2" stroke-width="10" stroke-linecap="round"/>
+  <!-- 湯気 -->
+  <g fill="none" stroke="#fffaf2" stroke-width="5" stroke-linecap="round" opacity="0.9">
+    <path d="M215 395 c-15 -25 15 -35 0 -60 c-12 -20 8 -30 0 -45"/>
+    <path d="M255 390 c-15 -25 15 -35 0 -60 c-12 -20 8 -30 0 -50"/>
+  </g>
+  <!-- 焼菓子の皿 -->
+  <ellipse cx="420" cy="535" rx="80" ry="18" fill="#f4ede2"/>
+  <path d="M378 505 h70 l-8 24 h-54 z" fill="#d19a5b"/>
+  <rect x="378" y="500" width="70" height="8" rx="3" fill="#e2b276"/>
+  <path d="M440 516 l34 -6 l-6 22 z" fill="#c78a4c"/>
+</svg>
